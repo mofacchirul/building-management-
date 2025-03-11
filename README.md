@@ -12,7 +12,7 @@ A responsive and user-friendly car rental platform that allows users to effortle
 ## 📖 Overview  
 The Building Management system enables seamless management of building facilities, allowing administrators to efficiently handle tenant requests, track maintenance tasks, and oversee overall operations. Designed for both mobile and desktop devices, it ensures smooth accessibility for managers and users alike. Tenants can submit maintenance requests, view important announcements, and manage their leases with ease. The system also provides real-time updates and notifications for a hassle-free building management experience. 
 
-#### 🛒Building Management Features
+#### 🏢Building Management Features
 ✅ User Authentication – Register and log in using Google authentication.
 
 ✅ Product Listings – Add and manage product listings effortlessly.
@@ -41,6 +41,4 @@ The Building Management system enables seamless management of building facilitie
 - 📦 **Axios** (for API requests)  
 - 🍭 **SweetAlert2** (for alerts and confirmations)  
 
----
-
-Let me know if you need any modifications! 🚀🔥  
+---  
