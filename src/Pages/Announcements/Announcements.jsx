@@ -25,14 +25,14 @@ const announcementes = [
 const Announcements = () => {
   return (
     <div className="p-6">
-      <h1 className="text-4xl font-bold text-orange-600 text-center">BUILDING MANAGEMENT</h1>
+      <h1 className="text-4xl font-bold text-sky-400 text-center">BUILDING MANAGEMENT</h1>
       <p className="text-center text-lg mt-2">Check out the latest updates for residents and staff.</p>
       <p className="text-center text-green-600 font-semibold mt-1">Total Announcements: {announcementes.length}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {announcementes.map((announcement, index) => (
           <div key={index} className="shadow-lg rounded-2xl border border-gray-200 p-4">
-            <h2 className="text-xl font-bold text-blue-700 flex items-center gap-2">
+            <h2 className="text-xl font-bold text-sky-500 flex items-center gap-2">
               <span className="text-blue-500">
                 <CalendarDays size={20} />
               </span>

@@ -3,9 +3,12 @@ import { Link, NavLink } from 'react-router-dom';
 import imglogoing from './icons8-profile-picture.gif';
 import logo from './logo.jpg';
 import { AuthContext } from '../../Provider/Provider';
+import Useadmin from '../../MainLayOut/useadmin';
 
 const Navbar = () => {
   const { Singout, user } = useContext(AuthContext);
+  const [admin]= Useadmin()
+  const admindashbord = admin ? "/dashboard/admin_profile" : "/dashboard/my_profile"
 
   const links = (
     <>
@@ -59,7 +62,7 @@ const Navbar = () => {
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-16 h-16 rounded-full">
-                  <img src={user?.photoURL} className="w-14 h-14 mx-auto rounded-full"  alt="h" />
+                 <img src={user?.photoURL || imglogoing}  alt="" />
                  
                 </div>
               </label>
@@ -67,12 +70,13 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-compact dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                 <h1 className=" font-bold text-yellow-500 text-xl">{user?.displayName}</h1>
+
+                
                 <li>     
-                  <NavLink to="/dashboard">Dashboard</NavLink>
+                  <NavLink to={admindashbord}>Dashboard</NavLink>
                 </li>
                 <li>
-                  <button onClick={Singout} className="btn btn-error">
+                  <button onClick={Singout} className="px-4 py-2 text-center bg-sky-400 font-bold">
                     Log Out
                   </button>
                 </li>

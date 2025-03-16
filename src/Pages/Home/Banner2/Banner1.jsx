@@ -13,7 +13,7 @@ const Banner1 = () => {
     return (
 
     
-       <div className='py-16'>
+       <div className='max-w-screen-xl  mx-auto py-16'>
         <div>
         <h2 className="text-center uppercase text-3xl font-bold mb-6 text-gray-800">
         about the building

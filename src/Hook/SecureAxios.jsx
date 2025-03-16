@@ -32,6 +32,7 @@ const SecureAxioc = () => {
       
       return response;
     }, async (error)=> {
+     console.log(error.response);
      
       const stutas = error.response.status;
       if(stutas === 401 || stutas === 403){

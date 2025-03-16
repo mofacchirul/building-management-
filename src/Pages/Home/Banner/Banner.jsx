@@ -31,7 +31,7 @@ const Coupons = () => {
     const images = [img1, img2, img3]
 
     return (
-        <div className="py-8 bg-gray-100">
+        <div className="py-8 max-w-screen-xl mx-auto bg-gray-100">
             <h2 className="text-center text-3xl font-bold mb-6 text-gray-800">
                 Exclusive Coupons for You
             </h2>
