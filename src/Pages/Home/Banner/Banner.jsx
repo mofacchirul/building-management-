@@ -39,7 +39,7 @@ const Coupons = () => {
                 {coupons.map((coupon, index) => (
                     <div
                         key={coupon.id}
-                        className="p-6 border rounded-xl shadow-lg text-center"
+                        className="p-6 border w-[330px] lg:w-full mx-auto rounded-xl shadow-lg text-center"
                    
                     >
                         <img

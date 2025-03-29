@@ -22,7 +22,7 @@ const Banner1 = () => {
 
          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
             {banners.map((data) => (
-                <div className="p-2 border w-1/2 mx-auto lg:w-full    rounded-lg shadow-md overflow-hidden" key={data._id}>
+                <div className="p-2 border w-[330px] mx-auto lg:w-full    rounded-lg shadow-md overflow-hidden" key={data._id}>
                     <img src={data.img} alt={data.name} className="w-full h-48 object-cover" />
                     <div>
                         <h2 className="lg:text-3xl text-xl font-bold text-sky-500">{data.name}</h2>
