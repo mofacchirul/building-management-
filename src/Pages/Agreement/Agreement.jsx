@@ -65,8 +65,8 @@ const Agreement = () => {
   };
 
   return (
-    <div className=" py-6 ">
-      <h1 className="text-2xl font-bold mb-4">Available Apartments</h1>
+    <div className="lg:py-16 w-10/12 mx-auto py-8  rounded-xl">
+      <h1 className=" text-center lg:text-3xl text-xl text-sky-500  font-bold mb-4">Available Apartments</h1>
       <div className="">
       
           <div
@@ -78,13 +78,13 @@ const Agreement = () => {
               alt={`Apartment ${apartments.apartment_no}`}
               className="w-full h-[450px] lg:h-[550px] object-cover mb-4"
             />
-            <h2 className="text-lg font-bold">Block: {apartments.block_name}</h2>
+            <h2 className="text-lg text-sky-400 font-bold">Block: {apartments.block_name}</h2>
             <p>Floor No: {apartments.floor_no}</p>
             <p>Apartment No: {apartments.apartment_no}</p>
             <p>Rent: ${apartments.rent}</p>
             <button
               onClick={() => handleAgreement(apartments)}
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              className="mt-4 btn btn-info text-white rounded-lg hover:bg-blue-600"
             >
               Request Agreement
             </button>

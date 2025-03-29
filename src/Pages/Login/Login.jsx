@@ -54,7 +54,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col py-10 lg:flex-row-reverse items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col py-10 lg:flex-row-reverse items-center justify-center min-h-screen ">
       {/* Lottie Animation */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <Lottie animationData={animationData} />
@@ -62,7 +62,7 @@ const Login = () => {
 
       {/* Login Form */}
       <div className="card w-full max-w-sm shrink-0 shadow-2xl p-6">
-        <h1 className='font-bold text-xl text-center lg:text-5xl'>Login Now!</h1>
+        <h1 className='font-bold text-xl text-center text-sky-500 lg:text-4xl'>Login Now!</h1>
 
         {/* Admin Buttons for Autofill */}
      
@@ -112,12 +112,12 @@ const Login = () => {
 
           {/* Login Button */}
           <div className="form-control mt-6">
-            <button className="btn bg-sky-400 text-white hover:text-black">Login</button>
+            <button className="btn btn-info text-white hover:text-black">Login</button>
           </div>
         </form>
 
         <div>
-          <h3 className='text-xl text-info font-semibold'>Create your account</h3>
+          <h3 className='text-xl  font-semibold'>Create your account</h3>
           <p>
             Have an account? <Link to="/signup" className='underline text-info'>Register now</Link>
           </p>

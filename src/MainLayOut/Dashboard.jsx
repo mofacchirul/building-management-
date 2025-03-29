@@ -126,9 +126,9 @@ const Dashboard = () => {
           </div>
 
           
-          <div className='lg:hidden shadow-xl bg-white relative'>
+          <div className='lg:hidden shadow-xl  relative'>
   <details className="dropdown">
-    <summary className="btn m-1">
+    <summary className="btn btn-info   m-1">
       <CiMenuBurger />
     </summary>
     <ul className="menu dropdown-content bg-base-100 rounded-box absolute top-full left-0 z-50 w-52 p-4 shadow-xl">
@@ -139,7 +139,7 @@ const Dashboard = () => {
               <NavLink
                 className={({ isActive }) =>
                   `block px-2 py-2 rounded-lg ${
-                    isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                    isActive ? ' text-sky-400 font-bold' : ''
                   }`
                 }
                 to="/dashboard/admin_profile"
@@ -151,7 +151,7 @@ const Dashboard = () => {
               <NavLink
                 className={({ isActive }) =>
                   `block px-2 py-2 rounded-lg ${
-                    isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                    isActive ? ' text-sky-400 font-bold' : ''
                   }`
                 }
                 to="/dashboard/manage_Members"
@@ -163,7 +163,7 @@ const Dashboard = () => {
               <NavLink
                 className={({ isActive }) =>
                   `block px-2 py-2 rounded-lg ${
-                    isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                    isActive ? ' text-sky-400 font-bold' : ''
                   }`
                 }
                 to="/dashboard/make_announcement"
@@ -175,7 +175,7 @@ const Dashboard = () => {
               <NavLink
                 className={({ isActive }) =>
                   `block px-2 py-2 rounded-lg ${
-                    isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                    isActive ? ' text-sky-400 font-bold' : ''
                   }`
                 }
                 to="/dashboard/agreement_requests"
@@ -191,7 +191,7 @@ const Dashboard = () => {
                 to="/dashboard/my_profile"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-lg ${
-                    isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                    isActive ? ' text-sky-400 font-bold' : ''
                   }`
                 }
               >
@@ -203,7 +203,7 @@ const Dashboard = () => {
                 to="/dashboard/announcements"
                 className={({ isActive }) =>
                   `block px-4 py-2 rounded-lg ${
-                    isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                    isActive ? ' text-sky-400 font-bold' : ''
                   }`
                 }
               >
@@ -219,7 +219,7 @@ const Dashboard = () => {
           <NavLink
             className={({ isActive }) =>
               `block px-4 py-2 rounded-lg ${
-                isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                isActive ? ' text-sky-400 font-bold' : ''
               }`
             }
             to="/"
@@ -231,7 +231,7 @@ const Dashboard = () => {
           <NavLink
             className={({ isActive }) =>
               `block px-4 py-2 rounded-lg ${
-                isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                isActive ? 'text-sky-400  font-bold' : ''
               }`
             }
             to="/apartment"

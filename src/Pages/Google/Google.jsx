@@ -35,7 +35,7 @@ const HandleGoole = ()=>{
 
     return (
         <div className='py-3'>
-           <button onClick={HandleGoole} className="btn btn-block text-xl bg-white"><img className='h-10 ' src={google} alt="" /> Google </button>
+           <button onClick={HandleGoole} className="btn btn-block text-xl "><img className='h-10 ' src={google} alt="" /> Google </button>
         </div>
     );
 };

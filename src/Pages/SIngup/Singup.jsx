@@ -155,7 +155,7 @@ const Singup = () => {
                 </button>
               </div>
               <div>
-                <h3 className="text-xl text-info font-semibold">
+                <h3 className="text-xl  font-semibold">
                   Create your account
                 </h3>
                 <p>

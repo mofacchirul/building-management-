@@ -26,7 +26,7 @@ const Apartment = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6 text-center">Available Apartments</h1>
+      <h1 className="lg:text-3xl text-xl text-sky-500 font-bold mb-6 text-center">Available Apartments</h1>
       <label className="input input-bordered flex items-center gap-2">
       <input
           type="text"
@@ -66,7 +66,7 @@ const Apartment = () => {
            <Link to={`/agreement/${apartment._id}`}>
            <button
               
-              className="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
+              className="mt-4 btn btn-info btn-block text-white font-semibold rounded-lg hover:bg-blue-600"
             >
               Agreement
             </button>

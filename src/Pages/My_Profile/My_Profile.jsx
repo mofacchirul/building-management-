@@ -23,11 +23,11 @@ const My_Profile = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto mt-10 p-6 bg-white shadow-xl rounded-lg">
+    <div className="max-w-2xl border rounded-xl mx-auto mt-10 p-6  shadow-xl ">
       <h1 className="text-2xl text-center bg-sky-500 text-white rounded-xl font-bold py-2 mb-4">
         My Profile
       </h1>
-      <div className="flex flex-col items-center">
+      <div className=" flex-col items-center">
         {user?.photoURL ? (
           <img
             src={user.photoURL}
@@ -41,7 +41,7 @@ const My_Profile = () => {
         )}
         <p className="text-lg font-medium">Name: {user?.displayName || 'N/A'}</p>
         <p className="text-lg font-medium">Email: {user?.email || 'N/A'}</p>
-        <p className="text-gray-500 mt-1">Login Time: {loginTime || 'Fetching time...'}</p>
+        <p className=" mt-1">Login Time: {loginTime || 'Fetching time...'}</p>
       </div>
 
       <div className="mt-6 border-t pt-4">
@@ -55,7 +55,7 @@ const My_Profile = () => {
  
       </div>
       <div className="divider"></div>
-      <div className='py-3 w-1/2 mx-auto space-x-3'>
+      <div className='py-3 w-10/12 flex mx-auto  justify-between'>
                     <button onClick={singout} className='btn bg-red-500 hover:text-black text-white'>Login Out </button>
                     <Link className='/'>
                     <button className='btn font-bold bg-sky-400'>

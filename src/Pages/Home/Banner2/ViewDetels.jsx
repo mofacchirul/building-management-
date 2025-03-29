@@ -8,19 +8,19 @@ const ViewDetels = () => {
     
     return (
         <div>
-            <div className="w-full">
+            <div className="lg:py-16 w-10/12 mx-auto py-8 p-2 border rounded-xl">
        
-                <div className="  bg-white rounded-lg shadow-md  overflow-hidden" key={data._id}>
+                <div className="   rounded-lg shadow-md  overflow-hidden" key={data._id}>
                 <img
                   src={data.img}
                   alt={data.name}
-                  className="w-full h-auto  object-cover"
+                  className="lg:w-full lg:h-auto h-60 w-full p-3  object-cover"
                 />
                 <div className="p-4">
-                  <h2 className="text-2xl font-bold text-gray-800">{data.name}</h2>
-                  <p className="text-gray-600 text-sm mb-4">{data.location}</p>
-                  <p className="text-gray-700 mb-4">{data.description}</p>
-                  <div className="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                  <h2 className="lg:text-3xl text-xl text-sky-500 font-bold">{data.name}</h2>
+                  <p className="text-white text-sm mb-4">{data.location}</p>
+                  <p className="text-white mb-4">{data.description}</p>
+                  <div className="grid grid-cols-2 gap-4 text-sm text-white">
                     <p><span className="font-bold">Year:</span> {data.year}</p>
                     <p><span className="font-bold">Height:</span> {data.height}</p>
                     <p><span className="font-bold">Floors:</span> {data.floors}</p>
@@ -28,8 +28,8 @@ const ViewDetels = () => {
                     <p><span className="font-bold">Architect:</span> {data.architect}</p>
                   </div>
                   <div className="mt-4">
-                    <span className="font-bold">Amenities:</span>
-                    <p className="text-gray-600">{data.amenities}</p>
+                    <span className="lg:text-3xl text-xl text-sky-500 font-bold">Amenities:</span>
+                    <p className="text-white">{data.amenities}</p>
                   </div>
                 </div>
               </div>

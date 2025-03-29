@@ -25,8 +25,8 @@ const announcementes = [
 const Announcements = () => {
   return (
     <div className="p-6">
-      <h1 className="text-4xl font-bold text-sky-400 text-center">BUILDING MANAGEMENT</h1>
-      <p className="text-center text-lg mt-2">Check out the latest updates for residents and staff.</p>
+      <h1 className="lg:text-4xl text-xl font-bold text-sky-500 text-center">BUILDING MANAGEMENT</h1>
+      <p className="text-center text-lg text-white mt-2">Check out the latest updates for residents and staff.</p>
       <p className="text-center text-green-600 font-semibold mt-1">Total Announcements: {announcementes.length}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
@@ -38,8 +38,8 @@ const Announcements = () => {
               </span>
               {announcement.title}
             </h2>
-            <p className="text-gray-600 mt-2">{announcement.content}</p>
-            <div className="text-gray-500 text-sm mt-4 flex items-center gap-2">
+            <p className="text-white mt-2">{announcement.content}</p>
+            <div className="text-sky-400 text-sm mt-4 flex items-center gap-2">
               <CalendarDays size={16} /> {announcement.date}
             </div>
           </div>
