@@ -56,7 +56,7 @@ const router = createBrowserRouter([
           <ViewDetels />
         </Private>,
         loader: ({ params }) =>
-          fetch(`https://assignment-12-serside.vercel.app/banner/${params.id}`)
+          fetch(`http://localhost:4000/banner/${params.id}`)
       },
       {
         path: "/login",
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
            <Agreement />
         </Private>,
         loader: ({ params }) =>
-          fetch(`https://assignment-12-serside.vercel.app/apartment/${params.id}`)
+          fetch(`http://localhost:4000/apartment/${params.id}`)
       }
     ]
   },

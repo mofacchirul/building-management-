@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ConstructionSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl py-10  mx-auto">
+    <section className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl lg:py-16 py-8  mx-auto">
       {/* Left Image */}
       <div className="w-full md:w-1/2">
         <img
@@ -14,9 +14,9 @@ const ConstructionSection = () => {
       </div>
       
       {/* Right Content */}
-      <div className="w-full md:w-1/2 md:pl-12">
+      <div className="lg:w-full w-96 md:pl-12">
 
-        <h2 className="text-3xl font-bold mt-4">Trusted Partner in Construction and Design</h2>
+        <h2 className="lg:text-3xl text-xl text-sky-500 font-bold mt-4">Trusted Partner in Construction and Design</h2>
         
         <div className="relative w-fit mt-4">
           <img
@@ -29,12 +29,12 @@ const ConstructionSection = () => {
           </div>
         </div>
 
-        <p className="text-gray-600 mt-4">
+        <p className="text-white mt-4">
           Our journey began with a commitment to excellence, and that commitment remains at the core of our operations today. We've grown from a small local business into a trusted partner for both residential and commercial projects.
         </p>
 
         <Link to={'/apartment'}>
-        <button className="mt-6 px-6 py-3 bg-sky-400 text-white font-semibold rounded-full flex items-center gap-2 hover:bg-yellow-500 transition">
+        <button className="mt-6 btn btn-info px-6 py-3 b text-white font-semibold rounded-full flex items-center gap-2 hover:bg-yellow-500 transition">
         Apartment
           <span className="text-lg">➡️</span>
         </button>

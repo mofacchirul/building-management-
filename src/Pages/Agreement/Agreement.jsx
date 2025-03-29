@@ -29,7 +29,7 @@ const Agreement = () => {
     
 
     try {
-      const response = await fetch("https://assignment-12-serside.vercel.app/agreement", {
+      const response = await fetch("http://localhost:4000/agreement", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

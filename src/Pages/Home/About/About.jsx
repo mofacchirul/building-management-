@@ -6,25 +6,25 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className=" py-16 px-6">
+    <div className=" lg:py-16 py-6 px-6">
       <div className="max-w-7xl mx-auto ">
         
       <div className="lg:flex gap-5 items-center justify-between ">
       <div>
-      <p className="uppercase tracking-widest text-gray-400 text-sm mb-3">
+      <h1 className="uppercase text-center lg:text-3xl text-xl text-sky-500 font-bold lg:text-start tracking-widest  mb-3">
           About Our Company
-        </p>
-       <h1 className="lg:text-3xl text-xl font-bold mb-8">
-          Innovative Solutions for Complex Projects
         </h1>
+       <p className=" text-center lg:text-start  mb-8">
+          Innovative Solutions for Complex Projects
+        </p>
         
         <div className="">
           {/* Left Image with Play Button */}
-          <div className="flex items-center gap-5 ">
+          <div className="lg:flex space-y-2 items-center gap-5 ">
             <img
               src="https://i.ibb.co.com/sdTKYB9d/about-2.jpg"
               alt="About"
-              className=" w-60 h-60 rounded-lg shadow-lg"
+              className=" w-60 h-60 mx-auto rounded-lg shadow-lg"
             />
            
            <div className="">
@@ -54,7 +54,7 @@ const About = () => {
 
             {/* Discover More Button */}
             <Link to={'/apartment'}>
-            <button className="bg-sky-300 text-black font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-yellow-500 transition">
+            <button className="btn btn-info text-white font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-yellow-500 transition">
             Apartments  MORE <BsArrowRight />
             </button>
             </Link>
