@@ -31,12 +31,13 @@ const Agreement_Requests = () => {
               if (result.isConfirmed) {
                   axios.delete(`/agrements/${id}`).then((res) => {
                       if (res.data.deletedCount > 0) {
-                          refetch();
+                         
                           Swal.fire({
                               title: "Deleted!",
                               text: "Your file has been deleted.",
                               icon: "success",
                           });
+                          refetch();
                       }
                   });
               }
@@ -47,10 +48,10 @@ const Agreement_Requests = () => {
     <div className="p-6">
 
 <div className="overflow-x-auto">
-  <table className="table">
+  <table className="table ">
     {/* head */}
     <thead>
-      <tr>
+      <tr className="bg-sky-400 text-white">
         <th>NO</th>
         <th>Name</th>
         <th>Email</th>
@@ -76,9 +77,9 @@ const Agreement_Requests = () => {
                 <td className="border border-gray-300 p-2">
                   {new Date(request.requestDate).toLocaleDateString()}
                 </td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-gray-300 space-y-2 flex-col-reverse items-center p-2">
                   <button
-                    className="bg-green-500 text-white px-3 py-1 rounded mr-2 hover:bg-green-600"
+                    className="bg-sky-500 text-white px-3 py-1 rounded mr-2 hover:bg-green-600"
                    
                   >
                     Accept

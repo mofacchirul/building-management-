@@ -1,0 +1,32 @@
+[
+    {
+        title: "Construction", 
+        description: "Construction is the process of creating structures that serve various purposes, from homes to commercial buildings. It involves careful planning, design, and execution to ensure safety, functionality, and sustainability. Through skilled labor and modern techniques, construction turns ideas into tangible, lasting landmarks, shaping our cities and communities. ",
+        image: "https://i.ibb.co.com/MyGG5rnB/service-1.jpg"
+    },
+    {
+        title: "Architectural", 
+        description: " Architectural construction is the foundation of creating functional and inspiring spaces. It blends creativity with engineering to design structures that are safe, sustainable, and visually striking. Through careful planning and innovative design, architectural construction shapes the way we live, work, and interact with our surroundings.",
+        image: "https://i.ibb.co.com/prf6rnzD/service-2.jpg"
+    },
+    {
+        title: "Renovation", 
+        description: "Renovation breathes new life into old or outdated spaces. Whether it’s updating a kitchen, remodeling a bathroom, or transforming a whole house, renovation enhances functionality and aesthetics. It combines innovation with design, creating spaces that reflect contemporary needs while preserving original charm.",
+        image: "https://i.ibb.co.com/pjr8964Y/service-3.jpg"
+    },
+    {
+        title: "Smart Houses" , 
+        description: " Smart houses integrate advanced technology to enhance convenience, security, and energy efficiency. With features like automated lighting, climate control, and smart appliances, these homes provide comfort while reducing energy consumption. A smart home adapts to your needs, making daily living more efficient and enjoyable.",
+        image: "https://i.ibb.co.com/35bdccr8/services-1.jpg"
+    },
+    {
+        title: "Roof Repairing", 
+        description: " Roof repairing is essential to maintain the safety, comfort, and longevity of your home or building. It involves fixing leaks, replacing damaged shingles, and reinforcing structural integrity. Timely roof repairs prevent costly damage, ensuring protection from weather elements.",
+        image: "https://i.ibb.co.com/chWQh6Tj/services-5.jpg"
+    },
+    {
+        title: "Interior", 
+        description: " Interior design enhances the functionality and aesthetic appeal of spaces. It combines creativity, color schemes, furniture, lighting, and decor to create environments that are both practical and visually pleasing. A well-designed space reflects the personality and needs of its users.",
+        image: "https://i.ibb.co.com/Z6rMTwnZ/services-6.jpg"
+    }
+]

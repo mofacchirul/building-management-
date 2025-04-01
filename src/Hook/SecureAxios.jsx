@@ -5,8 +5,7 @@ import { AuthContext } from "../Provider/Provider";
 
  const Axioscreate = axios.create(
    {
-    baseURL: 'http://localhost:4000',
-    
+    baseURL: 'http://localhost:4000', 
    }
 )
 const SecureAxioc = () => {
@@ -33,18 +32,13 @@ const SecureAxioc = () => {
       return response;
     }, async (error)=> {
      console.log(error.response);
-     
       const stutas = error.response.status;
       if(stutas === 401 || stutas === 403){
-       
        await Singout(),
        navigate('/login')
       }
       return Promise.reject(error);
     });
-
-
-
     return Axioscreate
 };
 

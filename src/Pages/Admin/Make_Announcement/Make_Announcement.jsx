@@ -18,8 +18,8 @@ const Make_Announcement = () => {
     };
 
     return (
-        <div className="max-w-2xl mx-auto p-4 bg-white rounded-lg shadow">
-            <h3 className="text-3xl font-semibold mb-4">Make an Announcement</h3>
+        <div className="max-w-2xl mx-auto p-4 border rounded-lg shadow">
+            <h3 className="lg:text-3xl text-xl text-center  font-bold mb-4">Make an Announcement</h3>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label htmlFor="title" className="block text-lg font-medium mb-1">
@@ -51,7 +51,7 @@ const Make_Announcement = () => {
                 </div>
                 <button
                     type="submit"
-                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                    className="btn btn-info btn-block text-white rounded-lg hover:bg-blue-600"
                 >
                     Submit Announcement
                 </button>

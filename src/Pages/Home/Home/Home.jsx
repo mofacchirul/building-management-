@@ -8,6 +8,8 @@ import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
 import ConstructionSection from '../ConstructionSection/ConstructionSection';
 import BuildingDesigns from '../BuildingDesigns/BuildingDesigns';
+import Service from '../../Service/Service';
+import Contack_page from '../../Contack/Contack';
 
 
 
@@ -22,7 +24,9 @@ const Home = () => {
              <Portfolio></Portfolio>
        
              <BuildingDesigns></BuildingDesigns>
+             <Service></Service>
             <ApartmentLocation></ApartmentLocation>
+            <Contack_page></Contack_page>
         </div>
     );
 };

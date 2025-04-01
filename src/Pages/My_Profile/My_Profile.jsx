@@ -32,7 +32,7 @@ const My_Profile = () => {
           <img
             src={user.photoURL}
             alt="User Profile"
-            className="w-24 h-24 rounded-full shadow-lg mb-4 border-4 p-1 border-sky-300"
+            className="w-24 h-24 mx-auto rounded-full shadow-lg mb-4 border-4 p-1 border-sky-300"
           />
         ) : (
           <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shadow-lg mb-4">
@@ -58,7 +58,7 @@ const My_Profile = () => {
       <div className='py-3 w-10/12 flex mx-auto  justify-between'>
                     <button onClick={singout} className='btn bg-red-500 hover:text-black text-white'>Login Out </button>
                     <Link className='/'>
-                    <button className='btn font-bold bg-sky-400'>
+                    <button className='btn text-white font-bold bg-sky-400'>
                         Back to Home
                          </button></Link>
                 </div>

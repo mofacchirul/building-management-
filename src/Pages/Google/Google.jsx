@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import google from './icons8-google-100.png'
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
 // import Swal from 'sweetalert2';
 import { AuthContext } from '../../Provider/Provider';
 import Swal from 'sweetalert2';
@@ -9,7 +9,9 @@ import PublicAxios from '../../Hook/PublicAxios/PublicAxios';
 const Google = () => {
     const {Google}=useContext(AuthContext)
 const axios = PublicAxios()
-    const navigate = useNavigate()
+const navigate = useNavigate();
+const location = useLocation();
+const from = location.state?.from?.pathname || "/";
 const HandleGoole = ()=>{
     
     Google()
@@ -27,7 +29,7 @@ const HandleGoole = ()=>{
                       draggable: true
                     });
             }
-              navigate('/')
+              navigate(from)
           })
 
     })

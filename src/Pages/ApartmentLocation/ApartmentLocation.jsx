@@ -12,7 +12,7 @@ const ApartmentLocation = () => {
       </h1>
       
       {/* Input Section */}
-      <div className=" shadow-md rounded-lg p-6 mb-8">
+      <div className=" max-w-6xl mx-auto shadow-md rounded-lg p-6 mb-8">
         <h2 className="text-2xl font-semibold mb-4">Provide Your Apartment Details</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input

@@ -37,6 +37,11 @@ import Singup from './Pages/SIngup/Singup';
 import Private from './Provider/Private';
 import Privateadmin from './Provider/PrivateAdmin';
 import Admin_Profile from './Pages/Admin/Admin_Profile/Admin_Profile';
+import About from './Pages/Home/About/About';
+// import ApartmentLocation from './Pages/ApartmentLocation/ApartmentLocation';
+import Service from './Pages/Service/Service';
+import Contack_page from './Pages/Contack/Contack';
+import ServiccePost from './Pages/ServicePost/ServiccePost';
 
 
 const queryClient = new QueryClient()
@@ -77,6 +82,18 @@ const router = createBrowserRouter([
         </Private>,
         loader: ({ params }) =>
           fetch(`http://localhost:4000/apartment/${params.id}`)
+      },
+      {
+        path:'about',
+        element:<About></About>
+      },
+     {
+     path:'contack',
+     element:<Contack_page></Contack_page>
+     },
+      {
+        path:'service',
+        element:<Service></Service>
       }
     ]
   },
@@ -123,6 +140,7 @@ const router = createBrowserRouter([
           <Paymenthistory></Paymenthistory>
         </Private>
       },
+     
 
 
 
@@ -152,11 +170,11 @@ element:<Privateadmin>
         <Agreement_Requests></Agreement_Requests>
       </Privateadmin>
     },
-    // {
-    //   path:'manage_coupons',
-    //   element:<Manage_Coupons></Manage_Coupons>
-    // }
-
+    {
+      path:'serviccePost',
+      element:<ServiccePost></ServiccePost>
+    }
+  
 
 
 

@@ -13,7 +13,7 @@ const Dashboard = () => {
      
         <div className="lg:flex">
           {/* Sidebar */}
-          <div className="lg:w-72 hidden lg:block w-60 min-h-screen bg-gray-100 shadow-md">
+          <div className="lg:w-72 hidden lg:block w-60 min-h-screen  shadow-md">
             <div className="p-4 list-none space-y-2">
              
              {
@@ -25,7 +25,7 @@ const Dashboard = () => {
                     <NavLink
                       className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       }
                       to="/dashboard/admin_profile"
@@ -37,7 +37,7 @@ const Dashboard = () => {
                     <NavLink
                       className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       }
                       to="/dashboard/manage_Members"
@@ -49,7 +49,19 @@ const Dashboard = () => {
                     <NavLink
                       className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
+                        }`
+                      }
+                      to="/dashboard/serviccePost"
+                    >
+                      Servicce Post
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      className={({ isActive }) =>
+                        `block px-4 py-2 rounded-lg ${
+                          isActive ? ' text-sky-400 font-bold' : ''
                         }`
                       }
                       to="/dashboard/make_announcement"
@@ -61,7 +73,7 @@ const Dashboard = () => {
                     <NavLink
                       className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       }
                       to="/dashboard/agreement_requests"
@@ -82,7 +94,7 @@ const Dashboard = () => {
                       to="/dashboard/my_profile"
                       className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       }
                     >
@@ -94,7 +106,7 @@ const Dashboard = () => {
                       to="/dashboard/announcements"
                       className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       }
                     >
@@ -111,14 +123,14 @@ const Dashboard = () => {
               <li>
                      <NavLink  className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       }   to="/">Home</NavLink>
                    </li>
                    <li>
                      <NavLink   className={({ isActive }) =>
                         `block px-4 py-2 rounded-lg ${
-                          isActive ? 'bg-blue-100 font-bold' : 'hover:bg-gray-200'
+                          isActive ? 'text-sky-400 font-bold' : ''
                         }`
                       } to="/apartment">Apartments</NavLink>
                    </li>
@@ -159,6 +171,18 @@ const Dashboard = () => {
                 Manage Members
               </NavLink>
             </li>
+            <li>
+                    <NavLink
+                      className={({ isActive }) =>
+                        `block px-4 py-2 rounded-lg ${
+                          isActive ? 'text-sky-400 font-bold' : ''
+                        }`
+                      }
+                      to="/dashboard/serviccePost"
+                    >
+                      Servicce Post
+                    </NavLink>
+                  </li>
             <li>
               <NavLink
                 className={({ isActive }) =>
